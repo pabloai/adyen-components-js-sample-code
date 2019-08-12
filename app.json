@@ -12,6 +12,14 @@
   ],
   "website": "https://www.adyen.com/",
   "repository": "https://github.com/pabloai/adyen-components-js-sample-code",
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "./server/php/index.php"
+  },
   "env": {
     "MERCHANT_ACCOUNT": {
       "description": "Your merchant account"
