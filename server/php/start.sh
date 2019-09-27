@@ -1,7 +1,7 @@
 if [ -e .env ]
 then
     export $(grep -v '^#' .env | xargs)
-    sudo php -S localhost:3000 -t src/ server/php/index.php
+    sudo php -S localhost:3000 -t src/ ./index.php
 else
     echo ".env File was not found. Create a .env file in the root folder of the project following the example in .env.default"
 fi
