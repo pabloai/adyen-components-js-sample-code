@@ -18,7 +18,7 @@
     }
   ],
   "scripts": {
-    "postdeploy": "sude server/php/index.php"
+    "postdeploy": "sudo server/php/index.php"
   },
   "env": {
     "MERCHANT_ACCOUNT": {
