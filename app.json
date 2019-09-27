@@ -18,7 +18,7 @@
     }
   ],
   "scripts": {
-    "postdeploy": "./start.sh"
+    "postdeploy": "php -S localhost:3000 -t src/ server/php/index.php"
   },
   "env": {
     "MERCHANT_ACCOUNT": {
