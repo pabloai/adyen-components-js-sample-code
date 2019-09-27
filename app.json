@@ -18,7 +18,7 @@
     }
   ],
   "scripts": {
-    "postdeploy": "sudo server/php/index.php"
+    "postdeploy": "./start.sh"
   },
   "env": {
     "MERCHANT_ACCOUNT": {
