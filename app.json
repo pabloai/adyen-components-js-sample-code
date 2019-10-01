@@ -17,6 +17,9 @@
       "url": "heroku/php"
     }
   ],
+  "scripts": {
+    "postdeploy": "server/php/index.php"
+  },
   "env": {
     "MERCHANT_ACCOUNT": {
       "description": "Your merchant account"
