@@ -8,6 +8,10 @@ require('api/paymentMethods.php');
 require('api/payments.php');
 require('api/originKeys.php');
 
+if (!isset($_SERVER['REQUEST_URI'])) {
+    $_SERVER['REQUEST_URI'] = substr($_SERVER['PHP_SELF'], 1);
+}
+
 // Basic routing
 $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 
@@ -33,5 +37,4 @@ switch($request_uri[0]) {
     // default
     default:
         return false;
-
 }
