@@ -6,8 +6,7 @@
     "scripts": {
         "start": "npm run devserver",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "devserver": "node ./server/node/index.js",
-        "heroku-postbuild": "npm run devserver"
+        "devserver": "node ./server/node/index.js"
     },
     "repository": {
         "type": "git",
